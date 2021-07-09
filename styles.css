@@ -519,11 +519,17 @@ html {
   margin: auto;
   border-style: solid;
   border-color: rgba(255, 100, 0, .8);
-  height: 325px;
+  height: 405px;
   max-width: 800px;
   min-width: 700px;
   background-color: #333;
   border-radius: 10px;
+}
+
+.disease-sim-container h1{
+  text-align: center;
+  font-family: "Arial Narrow";
+  color: White;
 }
 
 .disease-sim-container p{
@@ -534,8 +540,8 @@ html {
   font-size: 20px;
   white-space: pre;
   position:relative;
-  top:30px;
-  left:180px;
+  top:20px;
+  left:-10px;
   line-height: 20px;
 }
 
@@ -553,4 +559,13 @@ html {
   top: 20px;
   border:none;
   cursor:pointer;
+}
+
+.disease-sim-container img{
+  max-height: 250px;
+  border-radius: 10px;
+  position: relative;
+  float: left;
+  left: 15px;
+  top: 30px;
 }
