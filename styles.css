@@ -1,6 +1,14 @@
 @import url(//db.onlinewebfonts.com/c/78a9e6b2826b
             48ab63808996f8fdfaf0?family=True+Lies);
 
+@font-face {
+font-family: 'True Lies';
+src:
+    local('True Lies'),
+    local('GreenWeb-Regular'),
+    url('True Lies.ttf');
+}
+
 body {background-color: grey;}
 
 html {
@@ -65,16 +73,15 @@ html {
 
 .hobbies h1{
   font-family: "True Lies";
-  text-align: center;
   font-size: 45px;
   font-style: italic;
   color: white;
   text-shadow: 2px 2px 2px rgba(50, 50, 50, 1);
   position:relative;
-  top: 220px;
-  left: 120px;
-  text-align: center;
-  margin-bottom: 0px;
+  top: 210px;
+  right: 100px;
+  text-align: right;
+  margin-bottom: 5px;
 }
 .head-bar {
 	color: white;
