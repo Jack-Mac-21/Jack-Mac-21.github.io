@@ -279,10 +279,14 @@ html {
 	float: right;
 	height: 35px;
 	position: relative;
-	left:70px;
+	left:110px;
 	bottom:80px;
 	border:none;
   cursor:pointer;
+}
+.git-button{
+  position: relative;
+  right: -20px;
 }
 .blackjack-project-container button:hover{
   background-color:rgba(50, 200, 240, .5);
@@ -567,7 +571,7 @@ html {
   color: White;
 }
 
-.disease-sim-container p{
+.disease-sim-description p{
   text-align: center;
   color: White;
   font-family: "Arial Narrow";
