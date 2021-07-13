@@ -210,14 +210,23 @@ html {
 	height: 20%;
 	max-width: 800px;
 	min-width: 700px;
-  max-height: 340px;
+  max-height: 450px;
 	background-color: #333;
 	border-radius: 10px;
+}
+.vid-project-container h1{
+  text-align: center;
+  font-family: "Arial Narrow";
+  position: relative;
+  top:0px;
+  right: -0px;
+  color: White;
 }
 
 .video video{
 	position: relative;
-	top:-160px;
+	top:0px;
+  left: 20px;
 	padding-left: 10px;
 	width:60%;
 	border-radius: 10px;
@@ -229,8 +238,8 @@ html {
 	text-align: center;
 	position: relative;
 	font-size: 20px;
-	left: 200px;
-	top:70px;
+	left: -20px;
+	top:0px;
 	font-family: "Arial Narrow";
 	font-style:italic;
 }
