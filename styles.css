@@ -248,6 +248,11 @@ h2, h3{
   transform: scale(1.5);
 }
 
+/*TRANSITION SECTION TO PROJECTS*/
+
+.transition-skills-to-projects{
+}
+
 
 /*--------- PROFILE description SECTION ------*/
 .profile-description-span{
@@ -440,6 +445,13 @@ h2, h3{
 .league-app-project-div img{
   width: 30%;
   text-align: center;
+  transition: all 1s ease-in-out;
+}
+
+.league-app-project-div img:hover{
+  width: 30%;
+  text-align: center;
+  transform: scale(1.2);
 }
 
 /*----------------------Recipe Transformer App Projct ------------------- */
@@ -449,7 +461,24 @@ h2, h3{
 
 .recipe-transformer-project-div img{
   width: 30%;
-  text-align: : center;
+  display: flex;
+  display: inline-block;
+  align-items: center;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  transition: all 1s ease-in-out;
+}
+
+.recipe-transformer-project-div img:hover{
+  width: 30%;
+  display: flex;
+  display: inline-block;
+  align-items: center;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  transform: scale(1.5)
 }
 
 /*------------------ Run 'n Gun Project Div -------------*/
@@ -462,4 +491,12 @@ h2, h3{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  transition: all 1.2s ease-in-out;
+}
+
+.run-n-gun-project-div img:hover {
+  transform: scale(1.2);
 }

@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
 <link rel="stylesheet" href="styles.css"> </link>
 <script rel="js" src="code.js"> </script>
+<script rel="js" src="animation.js" defer> </script>
+
 
 <!-- thumbs up symbol -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
@@ -23,7 +25,7 @@
   <img id="profile-photo" src="photos/profile-img.png" alt="Profile photo"></img>
   <span class="profile-description-span" onclick="this.blur();">
     <p id='profile-description'>
-      I am a programmer and much more...
+      I am a programmer and more...
     </p>
     <button id='profile-button' onclick="AlterProfile()">
       <i id='refresh-profile-button' class="fa fa-refresh" style="color:white"></i>
@@ -53,27 +55,26 @@
         <tr>
           <td>5. C#</td>
           <td>6. Unity</td>
-          <td>7. Commuminication</td>
-          <td>8. Photoshop</td>
-          <td>9. Premiere Pro </td>
+          <td>7. Xcode</td>
+          <td>8. Swift</td>
+          <td>9. Photo/Video Editing</td>
         </tr>
     </table>
 
 </div>
 
 <!----- TRANSITION TO PROJECTS ------->
-<section id="personal-quote-section">
+
+<section class= id="personal-quote-section">
   <div class="transition-skills-to-projects" style="background: none;">
-    <img class="animated handstand-photo" src="photos/nc-beach-edited.png" alt="handsand on a beach">
-    <p class="animated">
+    <img id="image-to-appear" class="animated handstand-photo" src="photos/nc-beach-edited.png" alt="handsand on a beach"\
+    style="opacity:0;"></img>
+    <p id="p-to-appear" class="animated" style="opacity: 0;">
       I am always striving to gain new skills and improve the ones I have. I never
-    want to be stagnant and will always push myself to reach new goals.
+    want to be stagnant and am always pushing myself to reach new goals.
     </p>
   </div>
 </section>
-
-<script rel="js" src="animation.js" defer> </script>
-
 
 <!----------------- PROJECTS SECTION ------------->
 <!------------------------------------------------>
@@ -82,7 +83,7 @@
 
 
 
-<h2 style="font-size: 6vw;text-align: center;">Projects</h2>
+<h2 class="projects-transition" style="font-size: 6vw;text-align: center;">Projects</h2>
 
 <!---------- League App Section ------------>
 <div class="league-app-project-div">
