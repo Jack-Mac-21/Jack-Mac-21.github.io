@@ -1,158 +1,201 @@
 <!DOCTYPE html>
-<html id="top">
-  <head>
-    <title>Resume</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
-    <link rel="preload" as="font" href="True Lies.ttf" type="font/ttf"/>
-  </head>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="styles.css"> </link>
+<script rel="js" src="code.js"> </script>
 
-  <div class="topnav">
-    <a class="active" href="#top">Home</a>
-    <a href="#about"> About me </a>
-    <a href= "#projects"> Projects </a>
-    <a href="#hobbies">Hobbies</a>
-  </div>
+<!-- thumbs up symbol -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+<!--refresh symbol -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--linkedin symbol -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-
-  <div class="head-bar">
-    <img class="beach" src="photos/beach_photo.png"> </img>
-    <div class="name">Jack McCallie </div>
-    <p class="description">SOFTWARE-DEVOLOPER, VIDEO-EDITOR, NINJA WARRIOR, DRONE-PILOT</p>
-    <p class="contact-info">johnmccallie2022@u.northwestern.edu <br> 919-428-7444 </p>
-  </div>
-
-<div class="about"> </div>
-  <h1 id="about"class="about-me"> About Me </h1>
-  <div class="profile-container">
-      <img class= "profile-photo"src="photos/profile-photo.JPG"></img>
-      <img class= "ninja-photo" src="photos/anw_photo.JPG"> </img>
-        <p class="bio-description">&nbsp &nbsp &nbsp &nbspI have always loved learning and taking
-          on new challenges. Whether it be a
-          sport, Ninja Warrior, flying drones, or creating an exciting
-          new piece of software I always do everything
-          I can to make it a success. No challenge is too
-          great and I am always looking for ways improve
-          to conquer the next big obstacle, whatever
-          it may be.</p>
-  </div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-<div id="projects" class="projects">
-  <h1> Projects </h1>
-</div>
-
-<div class="internet-scanner-project-container">
-  <h1> Internet Scanner </h1>
-  <img class="scan1" src="photos/scanner_all_results.png"></img>
-  <p>This program makes will  <br>
-    scan any number of given websites on<br>
-    their network characteristic and outputs<br>
-    them in a text table.
-  </p>
-  <a href="https://github.com/Jack-Mac-21/Internet-Scanner">
-    <button> Github Link </button>
+<div class="topnav">
+  <h1>Jack McCallie </h1>
+  <a href="https://www.linkedin.com/in/jack-mccallie//" style= "font-size: 14px; font-weight: bold;" target="_blank">
+    Linkedin
   </a>
+
 </div>
 
-  <div class="disease-sim-container">
-    <h1> Disease Simulator </h1>
-    <img class="diseaseSim1" src="photos/DiseaseSim2.png"></img>
-        <div class="disease-sim-description">
-          <p>
-          A tool for visualizing the spread of<br>
-          a virus and how varying disease traits<br>
-          changes the outbreak patterns.
-          </p>
-        </div>
-        <a href="https://www.microsoft.com/store/apps/9NT797G60JCB">
-          <button> Download Link </button>
-        </a>
+<!-- ------------- PROFILE PHOTO SECTION ----------->
+<div class="profile-photo-container">
+  <img id="profile-photo" src="photos/profile-img.png" alt="Profile photo"></img>
+  <span class="profile-description-span" onclick="this.blur();">
+    <p id='profile-description'>
+      I am a programmer and much more...
+    </p>
+    <button id='profile-button' onclick="AlterProfile()">
+      <i id='refresh-profile-button' class="fa fa-refresh" style="color:white"></i>
+    </button>
+  </span>
+  <span class="profile-arranged-photos-span">
+    <img class="animated fadeInRight"src="photos/anw-course-edited.png" alt="American Ninja Warrior photos"></img>
+    <img class="animated fadeInTop" src="photos/hometown-kid-edited.png" alt="basketball photo"></img>
+    <img class="animated fadeInLeft" src="photos/grad-photo-edited.png" alt="beach handstand photo"></img>
+  </span>
+
+
+</div>
+
+<!--  ------------- SKILLS SECTIONS ----------->
+<div class="skills-container">
+  <h2>
+    Skills
+  </h2>
+    <table>
+        <tr>
+          <td>1. HTML/CSS </td>
+          <td>2. Javascript</td>
+          <td>3. Python </td>
+          <td>4. C++/C</td>
+        </tr>
+        <tr>
+          <td>5. C#</td>
+          <td>6. Unity</td>
+          <td>7. Commuminication</td>
+          <td>8. Photoshop</td>
+          <td>9. Premiere Pro </td>
+        </tr>
+    </table>
+
+</div>
+
+<!----- TRANSITION TO PROJECTS ------->
+<section id="personal-quote-section">
+  <div class="transition-skills-to-projects" style="background: none;">
+    <img class="animated handstand-photo" src="photos/nc-beach-edited.png" alt="handsand on a beach">
+    <p class="animated">
+      I am always striving to gain new skills and improve the ones I have. I never
+    want to be stagnant and will always push myself to reach new goals.
+    </p>
+  </div>
+</section>
+
+<script rel="js" src="animation.js" defer> </script>
+
+
+<!----------------- PROJECTS SECTION ------------->
+<!------------------------------------------------>
+<!------------------------------------------------>
+
+
+
+
+<h2 style="font-size: 6vw;text-align: center;">Projects</h2>
+
+<!---------- League App Section ------------>
+<div class="league-app-project-div">
+  <h2>Golf Tracking iOS App</h2>
+  <img src="photos/League-App.png" alt="Home screen of iOS golf tracking app"></img>
+  <img src="photos/League-App-Family-Screen.png" alt="Photo iOS screen showing each plahyer"></img>
+  <img src="photos/League-App-Maddie.png" alt="Showing a Maddie's score in the iOS app"></img>
+
+  <div class="flex-container-in-project">
+    <p>
+      This app allows you to easily track and save your
+      scores with friends or family.
+    </p>
+    <table>
+      <caption>Primary Skills Utilized</caption>
+      <tr>
+        <td>1. Swift </td>
+      </tr>
+      <tr>
+        <td>2. Xcode </td>
+      </tr>
+    </table>
   </div>
 
-  <div class="run-n-gun-container">
-    <h1>Run 'n Gun</h1>
-    <img class="diseaseSim1" src="photos/Run-n-Gun-screenshot.png"></img>
-        <div class="run-gun-description">
-          <p>
-          Run 'n Gun is a fast past and challenging<br>
-          shooter. With multiple levels, multiple guns, <br>
-          and many enemy types this game is <br>
-          great whenever you want to have some <br>
-          fun.
-        </div>
-        <a href="https://www.microsoft.com/store/apps/9PL2PDZ84QQJ">
-          <button> Download Link </button>
-        </a>
+  <a class="project-link" href="https://github.com/Jack-Mac-21/League-App-Git" target="_blank">Github Link</a>
+
+</div>
+
+<!------------ Recipe Transformer Project ------------>
+<div class="recipe-transformer-project-div">
+  <h2>Recipe Transformer </h2>
+  <img src="photos/all-recipes-title.png" alt="home page of parm chicken recipe">
+  <img src="photos/all-recipes-ingredient.png" alt="ingredients for recipe on allrecipes.com">
+  <img src="photos/all-recipes-steps.png" alt="steps for recipe on on allrecipes.com">
+  <img src="photos/parsed-ingredients.png" alt="output of a program showing parsed transformed ingredients and other outputs">
+  <img src="photos/parsed-steps.png" alt="output of a program showing the transformed steps of a recipe">
+
+  <div class="flex-container-in-project">
+    <p>
+      This program uses python to scrape and parse together recipes
+      given by a url to allrecipes.com. The program can then convert
+      the recipes to similar recipes, but with a transformation.
+      For example, converting a recipe to a vegetarian version.
+    </p>
+    <table>
+      <caption>Primary Skills Utilized</caption>
+      <tr>
+        <td>1. Python </td>
+      </tr>
+      <tr>
+        <td>2. Leadership</td>
+      </tr>
+      <tr>
+        <td>3. Teamwork</td>
+      </tr>
+    </table>
   </div>
+  <a class="project-link" href="https://github.com/Jack-Mac-21/nlp-p2" target="_blank">Github Link</a>
+</div>
 
-  <div class="blackjack-project-container">
-    <h1> Blackjack </h1>
-    <div class="blackjack">
-      <img class="blackjack1" src="photos/blackjack1.png"></img>
-      <img class="blackjack2" src="photos/blackjack2.png"></img>
-      <img class="blackjack3" src="photos/blackjack3.png"></img>
-      <img class="blackjack4" src="photos/blackjack4.png"></img>
-    </div>
-    <div class="blackjack-description">
-      <p> A fun and easy to play blackjack</p>
-      <p> game built from the ground up  </p>
-      <p> in C++. </p>
-    </div>
-    <a href="Blackjack.html">
-      <button> More info... </button>
-    </a>
-    <a class="git-button" href="https://github.com/Jack-Mac-21/Black-Jack">
-      <button> Github Link </button>
-    </a>
+<!------------- Run 'n Gun Project -------------->
+<div class="run-n-gun-project-div">
+  <h2>Run 'n Gun</h2>
+  <h3>THE VIDEO GAME</h3>
+  <img src="photos/run-n-gun.png" alt="screen shot of the run and gun video game">
+
+  <div class="flex-container-in-project">
+    <p>
+      Here is a video game devoloped from the ground up with Unity and C#.
+      I worked with two teamates to bring the game to life. It is a fast
+      paced and challenging shooter. Not for the faint of heart, beware
+      this game is NOT for everyone.
+    </p>
+    <table>
+      <caption>Primary Skills Utilized</caption>
+      <tr>
+        <td>1. Unity</td>
+      </tr>
+      <tr>
+        <td>2. C#</td>
+      </tr>
+      <tr>
+        <td>3. Strong communication and teamwork</td>
+      </tr>
+    </table>
   </div>
-
-  <div id="hobbies"> </div>
-  <div class="hobbies">
-    <h1> Hobbies </h1>
-  </div>
-
-  <div class="vid-project-container">
-    <h1>Video Production</h1>
-    <div class="video">
-        <div class="vid-description">
-          <p> A movie I made to remember </p>
-          <p> an incredible time in Maine. </p>
-          <p> Maine is one of my favorite </p>
-          <p> places. </p>
-        </div>
-        <video width="60%" height="auto" controls>
-        <source class="maineVid" src="2k19_Maine_Summer.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
+  <a class="project-link" href="https://apps.microsoft.com/store/detail/run-n-gun/9PL2PDZ84QQJ" target="_blank">Windows Store Page</a>
+</div>
 
 
-<!-- <div class="inner-resume">
-    <div> </div>
-    <div> </div>
-    <h1> Resume </h1>
-    <div>
-      <img src="photos/resume_image.png"></img>
-    </div>
-  </div> -->
+<!-- -------- WORK EXPERIENCE SECTIONS----------->
+<div class="work-experience-container">
 
-<br>
-<br>
-<br>
-<br>
+  <h2>Work Experience</h2>
+
+  <h3>Senior Manager - Northwestern Men's basketball</h3>
+  <p>I led the team of managers responsible for faciliating all aspects of running
+  a division 1 basketball program. I utilized excellent communication and cooperation
+to insure games, travel, and practices executed smoothly. </p>
+
+  <h3>Manager/Practice Player - Northwestern Men's Basketball </h3>
+  <p>
+  During my time at Northwestern University, I worked as a manager and
+  practice player for the Northwestern Men's Basketball program.
+  </p>
+
+  <h3>Computer Science TA - Northwestern University</h3>
+  <p>
+    I helped students learned the fundamental aspects of game design, including C#
+    and Unity. I engaged with students to develop their skills with the Unity game engine,
+    and introducing them to fundamentals of C#.
+  </p>
+</div>
+
 
 </html>
