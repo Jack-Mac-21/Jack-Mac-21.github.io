@@ -445,11 +445,32 @@ h2, h3{
 .league-app-project-div img{
   width: 30%;
   text-align: center;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .league-app-project-div img:hover{
   width: 30%;
+  text-align: center;
+  transform: scale(1.2);
+}
+
+/*----------------------Disease Simulator Project ------------------- */
+.disease-sim-project-div{
+  text-align: center;
+}
+
+.disease-sim-project-div img{
+  width: 50%;
+  text-align: center;
+  border-style: solid;
+  border-width:thin;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.disease-sim-project-div img:hover{
+  border-width: thick;
+  width: 50%;
   text-align: center;
   transform: scale(1.2);
 }
@@ -467,7 +488,7 @@ h2, h3{
   border-radius: 5px;
   border-style: solid;
   border-width: thin;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .recipe-transformer-project-div img:hover{
@@ -494,7 +515,7 @@ h2, h3{
   border-radius: 10px;
   border-style: solid;
   border-width: thin;
-  transition: all 1.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .run-n-gun-project-div img:hover {
